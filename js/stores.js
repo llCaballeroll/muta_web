@@ -2,8 +2,8 @@
 // botones se activan solos. Si alguien llega desde "Compartir" en la app,
 // se le lleva directo a la tienda de su teléfono.
 const STORES = {
-  ios: '',      // p. ej. https://apps.apple.com/app/id0000000000
-  android: '',  // https://play.google.com/store/apps/details?id=com.luiscaballero.muta
+  ios: 'https://apps.apple.com/us/app/muta-gira-y-muta/id6829237403',
+  android: 'https://play.google.com/store/apps/details?id=com.luiscaballero.muta',
 };
 
 (function () {
