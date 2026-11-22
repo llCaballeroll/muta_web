@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://llcaballeroll.github.io/muta_web/sitemap.xml

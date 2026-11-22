@@ -1,163 +1,420 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MUTA · Gira. Atrapa. Muta.</title>
-  <meta name="description" content="MUTA es un juego gratis para iPhone y Android: gira la paleta, atrapa criaturas, muta y colecciona 20 skins para tu bacteria.">
-  <meta name="theme-color" content="#000000">
-  <meta property="og:title" content="MUTA · Gira. Atrapa. Muta.">
-  <meta property="og:description" content="Atrapa criaturas, muta y presume a tu bacteria. Gratis en iPhone y Android.">
-  <meta property="og:image" content="https://llcaballeroll.github.io/muta_web/assets/img/icon_512.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <title>MUTA · Spin. Catch. Mutate.</title>
+  <meta name="description" content="A free arcade game for iPhone and Android. Spin the paddle around your bacteria, catch creatures, dodge viruses and mutate. Story and Time Attack modes, 20 animated skins, 16 languages.">
+  <meta name="theme-color" content="#06041a">
+  <meta name="apple-itunes-app" content="app-id=6829237403">
+  <link rel="canonical" href="https://llcaballeroll.github.io/muta_web/">
+  <link rel="alternate" hreflang="en" href="https://llcaballeroll.github.io/muta_web/">
+  <link rel="alternate" hreflang="es" href="https://llcaballeroll.github.io/muta_web/es/">
+  <link rel="alternate" hreflang="x-default" href="https://llcaballeroll.github.io/muta_web/">
+
   <meta property="og:type" content="website">
-  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <meta property="og:site_name" content="MUTA">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="es_MX">
+  <meta property="og:title" content="MUTA · Spin. Catch. Mutate.">
+  <meta property="og:description" content="Catch creatures, mutate and show off your bacteria. 20 skins, Story and Time Attack. Free on iPhone and Android.">
+  <meta property="og:url" content="https://llcaballeroll.github.io/muta_web/">
+  <meta property="og:image" content="https://llcaballeroll.github.io/muta_web/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="MUTA: the bacteria Muti floating in purple space">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MUTA · Spin. Catch. Mutate.">
+  <meta name="twitter:description" content="Catch creatures, mutate and show off your bacteria. 20 skins, Story and Time Attack. Free on iPhone and Android.">
+  <meta name="twitter:image" content="https://llcaballeroll.github.io/muta_web/assets/img/og-image.jpg">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/img/icon-192.png">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500..700&amp;display=swap">
   <link rel="stylesheet" href="css/styles.css">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": [
+    "VideoGame",
+    "MobileApplication"
+  ],
+  "name": "MUTA",
+  "url": "https://llcaballeroll.github.io/muta_web/",
+  "description": "A free arcade game for iPhone and Android. Spin the paddle around your bacteria, catch creatures, dodge viruses and mutate. Story and Time Attack modes, 20 animated skins, 16 languages.",
+  "operatingSystem": "iOS, Android",
+  "applicationCategory": "GameApplication",
+  "genre": [
+    "Arcade",
+    "Casual"
+  ],
+  "playMode": "SinglePlayer",
+  "gamePlatform": [
+    "iPhone",
+    "Android"
+  ],
+  "inLanguage": [
+    "en",
+    "es",
+    "pt",
+    "fr",
+    "de",
+    "it",
+    "ru",
+    "pl",
+    "tr",
+    "id",
+    "vi",
+    "th",
+    "ja",
+    "ko",
+    "zh-Hans",
+    "zh-Hant"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Luis Angel Caballero Jardón"
+  },
+  "image": "https://llcaballeroll.github.io/muta_web/assets/img/og-image.jpg",
+  "screenshot": "https://llcaballeroll.github.io/muta_web/assets/shots/en/01-story.webp",
+  "sameAs": [
+    "https://apps.apple.com/us/app/muta-gira-y-muta/id6829237403",
+    "https://play.google.com/store/apps/details?id=com.luiscaballero.muta"
+  ]
+}
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="global-nav">
-    <nav class="container nav-inner" aria-label="Principal">
-      <a href="#" class="logo">
-        <img src="assets/img/favicon.png" alt="" width="26" height="26">
-        <span>MUTA</span>
-      </a>
+  <header class="nav">
+    <nav class="wrap nav-inner" aria-label="Main">
+      <a class="brand" href="./"><img src="assets/img/icon-192.png" alt="" width="30" height="30">MUTA</a>
       <div class="nav-links">
-        <a href="#modos" class="hide-sm">Modos</a>
-        <a href="#coleccion" class="hide-sm">Colección</a>
-        <a href="support.html">Soporte</a>
-        <a href="#descargar" class="btn btn-primary">Descargar</a>
+        <a href="#play">How to play</a>
+        <a href="#modes">Modes</a>
+        <a href="#bacteria">My bacteria</a>
+        <a href="#skins">Skins</a>
+        <a href="#road">The Road</a>
+        <a href="support.html">Support</a>
       </div>
+      <a class="lang" href="es/" hreflang="es" lang="es"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg><span>Español</span></a>
+      <a class="btn" href="./#get" data-smart-download>Get it free</a>
     </nav>
   </header>
 
-  <main>
-    <!-- Hero -->
-    <section class="tile black hero" id="descargar">
-      <div class="container">
-        <img src="assets/img/icon_512.png" alt="Ícono de MUTA" class="hero-icon rise" width="104" height="104">
-        <p class="eyebrow rise rise-2">Juego gratis para iPhone y Android</p>
-        <h1 class="display-hero rise rise-2">Gira. Atrapa. Muta.</h1>
-        <p class="lead rise rise-3">Mueve la paleta alrededor de tu bacteria, atrapa criaturas, evita los virus y muta en algo nuevo cada partida.</p>
-        <div class="actions rise rise-4">
-          <a class="btn btn-primary" data-store="ios" href="https://apps.apple.com/us/app/muta-gira-y-muta/id6829237403">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.37 12.62c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.48.83-.72 0-1.83-.81-3-.79-1.55.02-2.97.9-3.77 2.28-1.61 2.79-.41 6.91 1.15 9.17.77 1.1 1.68 2.34 2.87 2.3 1.15-.05 1.59-.75 2.98-.75 1.39 0 1.78.75 3 .72 1.24-.02 2.02-1.12 2.78-2.23.88-1.28 1.24-2.52 1.26-2.58-.03-.01-2.41-.93-2.43-3.69zM14.1 5.86c.63-.77 1.06-1.84.94-2.9-.91.04-2.01.61-2.67 1.37-.58.67-1.1 1.76-.96 2.8 1.02.08 2.06-.52 2.69-1.27z"/></svg>
-            <span>Descargar en App Store</span>
+  <main id="main">
+    <!-- Hero: el fondo del Home del juego -->
+    <section class="tile dark hero pad-b" aria-labelledby="hero-title">
+      <div class="floaters" aria-hidden="true">
+        <img class="b1" src="assets/img/bac/skin-galaxia.svg" alt="" width="256" height="256">
+        <img class="b2" src="assets/img/bac/skin-neon.svg" alt="" width="256" height="256">
+        <img class="b3" src="assets/img/bac/skin-fresa.svg" alt="" width="256" height="256">
+        <img class="b4 rainbow" src="assets/img/bac/skin-cosmica.svg" alt="" width="256" height="256">
+      </div>
+      <div class="wrap">
+        <img class="hero-icon" src="assets/img/icon-192.png" alt="" width="92" height="92">
+        <p class="eyebrow">MUTA · Free on iPhone and Android</p>
+        <h1 id="hero-title" class="display">Spin. Catch.<br><span class="grad">Mutate.</span></h1>
+        <p class="lead">Move the paddle around your bacteria, catch creatures, dodge the viruses and mutate into something new every round.</p>
+        <div class="stores">
+          <a class="store" href="https://apps.apple.com/us/app/muta-gira-y-muta/id6829237403" target="_blank" rel="noopener" data-store="ios">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.37 1.43c0 1.14-.5 2.27-1.18 3.08-.74.9-1.99 1.57-2.99 1.57-.12 0-.23-.02-.3-.03-.01-.06-.04-.22-.04-.39 0-1.15.57-2.27 1.2-2.98.81-.94 2.15-1.64 3.25-1.68.03.13.06.28.06.43Zm4.56 15.71c-.03.07-.46 1.58-1.52 3.12-.94 1.34-1.94 2.71-3.43 2.71-1.52 0-1.9-.88-3.63-.88-1.7 0-2.3.91-3.67.91-1.38 0-2.33-1.26-3.43-2.8C4 18.38 2.97 15.57 2.97 12.92c0-4.28 2.8-6.55 5.55-6.55 1.45 0 2.67.95 3.6.95.86 0 2.22-1.01 3.9-1.01.61 0 2.89.06 4.37 2.19-.13.09-2.38 1.37-2.38 4.19 0 3.26 2.85 4.42 2.95 4.45Z"/></svg>
+            <span><small>Download on the</small><strong>App Store</strong></span>
           </a>
-          <a class="btn btn-secondary" data-store="android" href="https://play.google.com/store/apps/details?id=com.luiscaballero.muta">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 2.3c-.3.3-.4.7-.4 1.2v17c0 .5.1.9.4 1.2l9.5-9.7L3.6 2.3zm10.6 10.8 2.7 2.7-11.3 6.5 8.6-9.2zm0-2.2L5.6 1.7l11.3 6.5-2.7 2.7zm3.9-1.9 3 1.7c.9.5.9 1.8 0 2.3l-3 1.7-3-3 3-2.7z"/></svg>
-            <span>Disponible en Google Play</span>
+          <a class="store" href="https://play.google.com/store/apps/details?id=com.luiscaballero.muta" target="_blank" rel="noopener" data-store="android">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#00c3ff" d="M3.6 1.8 13.8 12 3.6 22.2c-.37-.2-.6-.6-.6-1.1V2.9c0-.5.23-.9.6-1.1Z"/><path fill="#ffc400" d="m17.2 8.6 3.2 1.8c.9.5.9 1.8 0 2.3l-3.2 1.8-3.4-2.5Z"/><path fill="#00d26a" d="M3.6 1.8c.36-.22.82-.22 1.2 0l12.4 6.8-3.4 3.4Z"/><path fill="#ff3a44" d="m13.8 12 3.4 3.4-12.4 6.8c-.38.22-.84.22-1.2 0Z"/></svg>
+            <span><small>Get it on</small><strong>Google Play</strong></span>
           </a>
         </div>
-        <p class="fine rise rise-4">Sin cuenta. Tu progreso se queda en tu teléfono.</p>
-        <img src="assets/img/home.png" alt="Pantalla de inicio de MUTA con la bacteria sobre su plataforma" class="hero-phone rise rise-4" width="380" height="787">
+        <p class="fineprint">Free · No account · Game Center and Google Play Games</p>
+      </div>
+      <div class="stage">
+        <img class="screen side" src="assets/shots/en/07-home.webp" alt="Home screen with the bacteria on its platform" width="760" height="1652" loading="lazy">
+        <img class="screen" src="assets/shots/en/01-story.webp" alt="A Story round: the bacteria in the center, creatures coming in and the paddle around it" width="760" height="1652" fetchpriority="high">
+        <img class="screen side" src="assets/shots/en/03-bacteria.webp" alt="My bacteria screen with skins and accessories" width="760" height="1652" loading="lazy">
+      </div>
+    </section>
+
+    <!-- Cifras -->
+    <section class="tile alt pad-b" aria-label="The game in numbers">
+      <div class="wrap">
+        <div class="facts reveal">
+          <div class="f1"><b>20</b><span>animated skins</span></div>
+          <div class="f2"><b>2</b><span>game modes</span></div>
+          <div class="f3"><b>6</b><span>Story worlds</span></div>
+          <div class="f4"><b>16</b><span>languages</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cómo se juega -->
+    <section id="play" class="tile pad-b" aria-labelledby="play-title">
+      <div class="wrap">
+        <p class="eyebrow">How to play</p>
+        <h2 id="play-title" class="headline reveal">One finger.<br><span class="c-violet">Endless mutations.</span></h2>
+        <p class="lead reveal">Quick to learn, hard to put down.</p>
+        <ol class="rules reveal">
+          <li>
+            <img class="art wobble" src="assets/img/bac/skin-muti.svg" alt="" width="256" height="256" loading="lazy">
+            <strong>Spin</strong>
+            <span>Drag your finger to move the paddle around your bacteria.</span>
+          </li>
+          <li>
+            <img class="art" src="assets/img/bac/c-cyan.svg" alt="" width="256" height="256" loading="lazy">
+            <strong>Catch</strong>
+            <span>Hit the creatures with the paddle before they reach the center. Every 3 in a row raises your combo.</span>
+          </li>
+          <li>
+            <div class="trio" aria-hidden="true"><img src="assets/img/bac/c-coral.svg" alt="" width="256" height="256" loading="lazy"><img src="assets/img/bac/c-lime.svg" alt="" width="256" height="256" loading="lazy"><img src="assets/img/bac/c-cyan.svg" alt="" width="256" height="256" loading="lazy"></div>
+            <strong>Mutate</strong>
+            <span>Fill the 3 slots. Three of a kind or three different ones trigger a power for 6 seconds.</span>
+          </li>
+          <li>
+            <img class="art" src="assets/img/bac/c-virus.svg" alt="" width="256" height="256" loading="lazy">
+            <strong>Dodge</strong>
+            <span>The spiky purple virus costs you a life in Story and time in Time Attack. Don't touch it.</span>
+          </li>
+        </ol>
+        <div class="chips reveal" aria-label="Powers">
+          <span class="chip"><i style="--c:#3f6bff"></i>Wide gel</span>
+          <span class="chip"><i style="--c:#ff3f86"></i>Slow motion</span>
+          <span class="chip"><i style="--c:#20d69a"></i>Magnet</span>
+          <span class="chip"><i style="--c:#ffc94a"></i>Rainbow ×2</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Historia -->
+    <section id="modes" class="tile dark deep pad-b" aria-labelledby="story-title">
+      <div class="wrap">
+        <p class="eyebrow">Story mode</p>
+        <h2 id="story-title" class="headline reveal">Five lives.<br><span class="c-cyan">Endless levels.</span></h2>
+        <p class="lead reveal">New enemies keep showing up, the world changes every five levels and a boss waits every ten.</p>
+        <div class="chips reveal"><span class="chip">5 lives</span><span class="chip">Endless levels</span><span class="chip">A boss every 10 levels</span><span class="chip">6 worlds</span></div>
+        <ul class="worlds reveal" aria-label="The 6 worlds of Story mode">
+          <li style="--i:#22175A;--m:#120C38;--d:#06041A;--s:#CFC6FF"><b>Purple nebula</b><span>Levels 1–5</span></li>
+          <li style="--i:#0F3A6B;--m:#0A2147;--d:#030B1F;--s:#7FE7FF"><b>Primordial ocean</b><span>Levels 6–10</span></li>
+          <li style="--i:#6B1F1A;--m:#3A0F14;--d:#12040A;--s:#FFB36B"><b>Volcano</b><span>Levels 11–15</span></li>
+          <li style="--i:#2F6F8F;--m:#173D57;--d:#06141F;--s:#E6FBFF"><b>Ice</b><span>Levels 16–20</span></li>
+          <li style="--i:#1F5A3A;--m:#0F3322;--d:#04120A;--s:#B6FF7A"><b>Glowing jungle</b><span>Levels 21–25</span></li>
+          <li style="--i:#5A4515;--m:#2E230C;--d:#0E0A03;--s:#FFE08A"><b>Golden void</b><span>Levels 26–30</span></li>
+        </ul>
+      </div>
+      <div class="stage crop">
+        <img class="screen" src="assets/shots/en/01-story.webp" alt="A Story round with lives, level and goal at the top" width="760" height="1652" loading="lazy">
+        <img class="screen side" src="assets/shots/en/07-home.webp" alt="" width="760" height="1652" loading="lazy">
+      </div>
+    </section>
+
+    <!-- Contra reloj -->
+    <section class="tile alt pad-b" aria-labelledby="time-title">
+      <div class="wrap">
+        <div class="split">
+          <div>
+            <p class="eyebrow">Time Attack</p>
+            <h2 id="time-title" class="headline reveal">30 seconds.<br><span class="c-violet">Make them count.</span></h2>
+            <p class="lead reveal">Catch time capsules to earn seconds and dodge the viruses that take them away.</p>
+            <div class="chips reveal"><span class="chip"><i style="--c:#20d68e"></i>Capsule +5 s</span><span class="chip"><i style="--c:#6e3ff5"></i>Virus −3 s</span><span class="chip"><i style="--c:#ffc94a"></i>Its own leaderboard</span></div>
+          </div>
+          <img class="screen" src="assets/shots/en/02-time.webp" alt="A Time Attack round with the clock at the top" width="760" height="1652" loading="lazy">
+        </div>
       </div>
     </section>
 
     <!-- Mi bacteria -->
-    <section class="tile light">
-      <div class="container container-wide">
-        <div class="split">
+    <section id="bacteria" class="tile pad-b" aria-labelledby="bac-title">
+      <div class="wrap">
+        <div class="split flip">
           <div>
-            <p class="eyebrow">Mi bacteria</p>
-            <h2 class="display-lg">Una bacteria que es solo tuya.</h2>
-            <p class="lead">Ponle nombre, vístela con su skin favorita y un accesorio. La verás así en cada partida.</p>
-            <ul class="bullets">
-              <li><span class="dot">🎨</span><span><b>20 skins animadas</b> de común a legendaria.</span></li>
-              <li><span class="dot">👑</span><span><b>Accesorios</b> como corona, antenas, lentes y gorrito de fiesta.</span></li>
-              <li><span class="dot">💬</span><span><b>Compártela</b> con tus récords y reta a tus amigos.</span></li>
-              <li><span class="dot">😴</span><span><b>Tiene ánimo:</b> si no juegas, le da hambre y se cansa.</span></li>
-            </ul>
+            <p class="eyebrow">My bacteria</p>
+            <h2 id="bac-title" class="headline reveal">A bacteria<br><span class="grad">all your own.</span></h2>
+            <p class="lead reveal">Name it, dress it in its favorite skin and an accessory, and you'll see it like that in every round. It even has moods: if you don't play, it gets hungry and tired.</p>
+            <div class="chips reveal"><span class="chip">Crown</span><span class="chip">Antennae</span><span class="chip">Glasses</span><span class="chip">Party hat</span></div>
+            <div class="chips reveal" aria-label="Moods"><span class="chip"><i style="--c:#34c759"></i>Happy</span><span class="chip"><i style="--c:#ff9f0a"></i>Hungry</span><span class="chip"><i style="--c:#8e8e93"></i>Tired</span></div>
           </div>
-          <img src="assets/img/bacteria.png" alt="Pantalla Mi bacteria con skins y accesorios" class="phone" loading="lazy" width="320" height="663">
+          <img class="screen" src="assets/shots/en/03-bacteria.webp" alt="My bacteria: live preview, skins and accessories" width="760" height="1652" loading="lazy">
         </div>
       </div>
     </section>
 
-    <!-- Modos -->
-    <section class="tile dark" id="modos">
-      <div class="container container-wide">
-        <p class="eyebrow">Dos formas de jugar</p>
-        <h2 class="display-lg">Rápido de aprender. Difícil de soltar.</h2>
-        <div class="pair">
-          <figure>
-            <img src="assets/img/historia.png" alt="Partida del modo Historia" class="phone" loading="lazy" width="320" height="663">
-            <figcaption>
-              <h3>Historia</h3>
-              <p>Cinco vidas y niveles infinitos. Aparecen enemigos nuevos, seis escenarios y un jefe cada diez niveles.</p>
-            </figcaption>
-          </figure>
-          <figure>
-            <img src="assets/img/contrarreloj.png" alt="Partida del modo Contra reloj" class="phone" loading="lazy" width="320" height="663">
-            <figcaption>
-              <h3>Contra reloj</h3>
-              <p>Treinta segundos. Atrapa cápsulas para ganar tiempo y esquiva los virus que te lo quitan.</p>
-            </figcaption>
-          </figure>
+    <!-- Skins y meteoritos -->
+    <section id="skins" class="tile dark pad-b" aria-labelledby="skins-title">
+      <div class="wrap">
+        <p class="eyebrow">Collection</p>
+        <h2 id="skins-title" class="headline reveal">20 skins.<br><span class="c-gold">Every one alive.</span></h2>
+        <p class="lead reveal">Every skin is drawn live by the game, so it wobbles, glows and sparkles. Seven are waiting on the Road and twelve come from meteorites.</p>
+        <ul class="skins reveal" aria-label="The 20 skins">
+          <li style="--c:var(--r-common)"><img src="assets/img/bac/skin-muti.svg" alt="Original Muti · Common · starter" width="256" height="256" loading="lazy"></li>
+          <li style="--c:var(--r-common)"><img src="assets/img/bac/skin-menta.svg" alt="Mint bubble · Common · the Road" width="256" height="256" loading="lazy"></li>
+          <li style="--c:var(--r-common)"><img src="assets/img/bac/skin-fresa.svg" alt="Strawberry · Common · the Road" width="256" height="256" loading="lazy"></li>
+          <li style="--c:var(--r-rare)"><img src="assets/img/bac/skin-lava.svg" alt="Lava · Rare · the Road" width="256" height="256" loading="lazy"></li>
+          <li style="--c:var(--r-epic)"><img src="assets/img/bac/skin-galaxia.svg" alt="Galaxy · Epic · the Road" width="256" height="256" loading="lazy"></li>
+          <li style="--c:var(--r-epic)"><img src="assets/img/bac/skin-aurora.svg" alt="Aurora · Epic · the Road" width="256" height="256" loading="lazy"></li>
+          <li style="--c:var(--r-legendary)"><img src="assets/img/bac/skin-eclipse.svg" alt="Eclipse · Legendary · the Road" width="256" height="256" loading="lazy"></li>
+          <li style="--c:var(--r-legendary)"><img class="rainbow" src="assets/img/bac/skin-supremo.svg" alt="Supreme mutant · Legendary · the Road" width="256" height="256" loading="lazy"></li>
+          <li style="--c:var(--r-common)"><img src="assets/img/bac/skin-limon.svg" alt="Lemon · Common · meteorites" width="256" height="256" loading="lazy"></li>
+          <li style="--c:var(--r-common)"><img src="assets/img/bac/skin-uva.svg" alt="Grape · Common · meteorites" width="256" height="256" loading="lazy"></li>
+          <li style="--c:var(--r-common)"><img src="assets/img/bac/skin-chicle.svg" alt="Bubblegum · Common · meteorites" width="256" height="256" loading="lazy"></li>
+          <li style="--c:var(--r-common)"><img src="assets/img/bac/skin-cielo.svg" alt="Sky · Common · meteorites" width="256" height="256" loading="lazy"></li>
+          <li style="--c:var(--r-rare)"><img src="assets/img/bac/skin-pastel.svg" alt="Pastel rainbow · Rare · meteorites" width="256" height="256" loading="lazy"></li>
+          <li style="--c:var(--r-rare)"><img src="assets/img/bac/skin-medusa.svg" alt="Jellyfish · Rare · meteorites" width="256" height="256" loading="lazy"></li>
+          <li style="--c:var(--r-rare)"><img src="assets/img/bac/skin-sandia.svg" alt="Watermelon · Rare · meteorites" width="256" height="256" loading="lazy"></li>
+          <li style="--c:var(--r-rare)"><img src="assets/img/bac/skin-oceano.svg" alt="Ocean · Rare · meteorites" width="256" height="256" loading="lazy"></li>
+          <li style="--c:var(--r-epic)"><img src="assets/img/bac/skin-neon.svg" alt="Neon · Epic · meteorites" width="256" height="256" loading="lazy"></li>
+          <li style="--c:var(--r-epic)"><img src="assets/img/bac/skin-cristal.svg" alt="Crystal · Epic · meteorites" width="256" height="256" loading="lazy"></li>
+          <li style="--c:var(--r-epic)"><img src="assets/img/bac/skin-magma.svg" alt="Magma · Epic · meteorites" width="256" height="256" loading="lazy"></li>
+          <li style="--c:var(--r-legendary)"><img class="rainbow" src="assets/img/bac/skin-cosmica.svg" alt="Cosmic · Legendary · meteorites" width="256" height="256" loading="lazy"></li>
+        </ul>
+        <div class="legend" aria-hidden="true">
+          <span><i style="--c:var(--r-common)"></i>Common</span>
+          <span><i style="--c:var(--r-rare)"></i>Rare</span>
+          <span><i style="--c:var(--r-epic)"></i>Epic</span>
+          <span><i style="--c:var(--r-legendary)"></i>Legendary</span>
+        </div>
+        <table class="odds reveal">
+          <caption>Each meteorite holds 5 cards. Each card drops with this chance and is split randomly among the meteorite skins of that rarity. Collect enough cards of a skin and it's yours. Cards of skins you already own turn into stardust, and 20 stardust become a new meteorite. The odds are also shown in the Shop.</caption>
+          <thead><tr><th scope="col">Rarity</th><th scope="col">Skins</th><th scope="col">Chance per card</th><th scope="col">Cards to unlock</th></tr></thead>
+          <tbody>
+            <tr style="--c:var(--r-common)"><th scope="row">Common</th><td>4</td><td>60%</td><td>10</td></tr>
+            <tr style="--c:var(--r-rare)"><th scope="row">Rare</th><td>4</td><td>28%</td><td>20</td></tr>
+            <tr style="--c:var(--r-epic)"><th scope="row">Epic</th><td>3</td><td>10%</td><td>30</td></tr>
+            <tr style="--c:var(--r-legendary)"><th scope="row">Legendary</th><td>1</td><td>2%</td><td>50</td></tr>
+          </tbody>
+        </table>
+        <div class="cards reveal">
+          <article class="card"><img src="assets/img/bac/c-gold.svg" alt="" width="256" height="256" loading="lazy"><h3>Free meteorites</h3><p>One every day, five more by watching ads, and another for every 25 special creatures you catch.</p></article>
+          <article class="card"><img src="assets/img/bac/skin-cristal.svg" alt="" width="256" height="256" loading="lazy"><h3>Nothing goes to waste</h3><p>Duplicate cards turn into stardust, and stardust turns into meteorites.</p></article>
+        </div>
+      </div>
+      <div class="stage crop">
+        <img class="screen side" src="assets/shots/en/05-skins.webp" alt="Skin collection" width="760" height="1652" loading="lazy">
+        <img class="screen" src="assets/shots/en/04-meteor.webp" alt="Shop with meteorites, the daily meteorite and the odds" width="760" height="1652" loading="lazy">
+      </div>
+    </section>
+
+    <!-- El Camino -->
+    <section id="road" class="tile alt pad-b" aria-labelledby="road-title">
+      <div class="wrap">
+        <p class="eyebrow">The Road</p>
+        <h2 id="road-title" class="headline reveal">Every round<br><span class="c-violet">moves you forward.</span></h2>
+        <p class="lead reveal">Every round earns XP for the Road, with rewards all the way to 99,999 XP: skins, accessories and meteorites.</p>
+        <ol class="road reveal">
+          <li><img src="assets/img/bac/skin-menta.svg" alt="" width="256" height="256" loading="lazy"><b>20 XP</b><span>Mint bubble skin</span></li>
+          <li><img src="assets/img/bac/skin-lava.svg" alt="" width="256" height="256" loading="lazy"><b>250 XP</b><span>Lava skin</span></li>
+          <li><img src="assets/img/bac/skin-galaxia.svg" alt="" width="256" height="256" loading="lazy"><b>1,000 XP</b><span>Galaxy skin</span></li>
+          <li><img src="assets/img/bac/muti-crown.svg" alt="" width="256" height="288" loading="lazy"><b>3,500 XP</b><span>The crown</span></li>
+          <li><img src="assets/img/bac/skin-eclipse.svg" alt="" width="256" height="256" loading="lazy"><b>5,000 XP</b><span>Eclipse skin</span></li>
+          <li><img class="rainbow" src="assets/img/bac/skin-supremo.svg" alt="" width="256" height="256" loading="lazy"><b>99,999 XP</b><span>Supreme mutant</span></li>
+        </ol>
+      </div>
+      <div class="stage crop">
+        <img class="screen" src="assets/shots/en/06-camino.webp" alt="The Road with its milestones and rewards" width="760" height="1652" loading="lazy">
+      </div>
+    </section>
+
+    <!-- Compartir y ranking -->
+    <section id="share" class="tile dark pad-b" aria-labelledby="share-title">
+      <div class="wrap">
+        <p class="eyebrow">Challenge your friends</p>
+        <h2 id="share-title" class="headline reveal">Show off your bacteria.<br><span class="c-gold">Climb the ranking.</span></h2>
+        <p class="lead reveal">Share an image of your bacteria with your records, and compete on Game Center or Google Play Games in Story and Time Attack.</p>
+        <ol class="steps reveal">
+          <li><strong>Play a round.</strong><span>Every score goes to its leaderboard.</span></li>
+          <li><strong>Open My bacteria.</strong><span>Tap Share.</span></li>
+          <li><strong>Send it.</strong><span>Your friends get a link straight to the store.</span></li>
+        </ol>
+      </div>
+      <div class="stage crop">
+        <img class="screen" src="assets/shots/en/08-share.webp" alt="Image to share with the bacteria and its records" width="760" height="1652" loading="lazy">
+        <img class="screen side" src="assets/shots/en/07-home.webp" alt="" width="760" height="1652" loading="lazy">
+      </div>
+    </section>
+
+    <!-- Galería -->
+    <section class="tile alt" aria-labelledby="gallery-title">
+      <div class="wrap">
+        <h2 id="gallery-title" class="headline">Take a closer look.</h2>
+      </div>
+      <div class="gallery">
+        <div class="gallery-track" tabindex="0" role="group" aria-label="Screenshots, scroll sideways">
+          <figure><img class="screen" src="assets/shots/en/01-story.webp" alt="" width="760" height="1652" loading="lazy"><figcaption>Story</figcaption></figure>
+          <figure><img class="screen" src="assets/shots/en/02-time.webp" alt="" width="760" height="1652" loading="lazy"><figcaption>Time Attack</figcaption></figure>
+          <figure><img class="screen" src="assets/shots/en/03-bacteria.webp" alt="" width="760" height="1652" loading="lazy"><figcaption>My bacteria</figcaption></figure>
+          <figure><img class="screen" src="assets/shots/en/04-meteor.webp" alt="" width="760" height="1652" loading="lazy"><figcaption>Meteorites</figcaption></figure>
+          <figure><img class="screen" src="assets/shots/en/05-skins.webp" alt="" width="760" height="1652" loading="lazy"><figcaption>20 skins</figcaption></figure>
+          <figure><img class="screen" src="assets/shots/en/06-camino.webp" alt="" width="760" height="1652" loading="lazy"><figcaption>The Road</figcaption></figure>
+          <figure><img class="screen" src="assets/shots/en/07-home.webp" alt="" width="760" height="1652" loading="lazy"><figcaption>Home</figcaption></figure>
+          <figure><img class="screen" src="assets/shots/en/08-share.webp" alt="" width="760" height="1652" loading="lazy"><figcaption>Share</figcaption></figure>
         </div>
       </div>
     </section>
 
-    <!-- Colección -->
-    <section class="tile parchment" id="coleccion">
-      <div class="container container-wide">
-        <p class="eyebrow">Colección</p>
-        <h2 class="display-lg">Juega, abre meteoritos, colecciona.</h2>
-        <p class="lead">Cada partida suma experiencia para el Camino. Cada meteorito trae cinco cartas de skins.</p>
-        <div class="pair">
-          <img src="assets/img/tienda.png" alt="Tienda con meteoritos y skins" class="phone" loading="lazy" width="320" height="663">
-          <img src="assets/img/camino.png" alt="Camino de recompensas" class="phone" loading="lazy" width="320" height="663">
+    <!-- Descargar -->
+    <section id="get" class="tile pad-b" aria-labelledby="get-title">
+      <div class="wrap">
+        <p class="eyebrow">iPhone · Android</p>
+        <h2 id="get-title" class="headline reveal">Your bacteria<br><span class="grad">is waiting.</span></h2>
+        <p class="lead reveal">Truly free: everything is earned by playing. No account to create, and your progress stays on your phone. If you like, remove ads with a single payment.</p>
+        <div class="stores reveal">
+          <a class="store" href="https://apps.apple.com/us/app/muta-gira-y-muta/id6829237403" target="_blank" rel="noopener" data-store="ios">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.37 1.43c0 1.14-.5 2.27-1.18 3.08-.74.9-1.99 1.57-2.99 1.57-.12 0-.23-.02-.3-.03-.01-.06-.04-.22-.04-.39 0-1.15.57-2.27 1.2-2.98.81-.94 2.15-1.64 3.25-1.68.03.13.06.28.06.43Zm4.56 15.71c-.03.07-.46 1.58-1.52 3.12-.94 1.34-1.94 2.71-3.43 2.71-1.52 0-1.9-.88-3.63-.88-1.7 0-2.3.91-3.67.91-1.38 0-2.33-1.26-3.43-2.8C4 18.38 2.97 15.57 2.97 12.92c0-4.28 2.8-6.55 5.55-6.55 1.45 0 2.67.95 3.6.95.86 0 2.22-1.01 3.9-1.01.61 0 2.89.06 4.37 2.19-.13.09-2.38 1.37-2.38 4.19 0 3.26 2.85 4.42 2.95 4.45Z"/></svg>
+            <span><small>Download on the</small><strong>App Store</strong></span>
+          </a>
+          <a class="store" href="https://play.google.com/store/apps/details?id=com.luiscaballero.muta" target="_blank" rel="noopener" data-store="android">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#00c3ff" d="M3.6 1.8 13.8 12 3.6 22.2c-.37-.2-.6-.6-.6-1.1V2.9c0-.5.23-.9.6-1.1Z"/><path fill="#ffc400" d="m17.2 8.6 3.2 1.8c.9.5.9 1.8 0 2.3l-3.2 1.8-3.4-2.5Z"/><path fill="#00d26a" d="M3.6 1.8c.36-.22.82-.22 1.2 0l12.4 6.8-3.4 3.4Z"/><path fill="#ff3a44" d="m13.8 12 3.4 3.4-12.4 6.8c-.38.22-.84.22-1.2 0Z"/></svg>
+            <span><small>Get it on</small><strong>Google Play</strong></span>
+          </a>
         </div>
-        <div class="cards">
-          <div class="card">
-            <div class="emoji">☄️</div>
-            <h3>Meteoritos gratis</h3>
-            <p>Uno diario, cinco más viendo anuncios y otro por cada 25 criaturas especiales que atrapes.</p>
-          </div>
-          <div class="card">
-            <div class="emoji">🗺️</div>
-            <h3>El Camino</h3>
-            <p>Recompensas hasta los 99,999 XP: skins, accesorios y meteoritos.</p>
-          </div>
-          <div class="card">
-            <div class="emoji">✨</div>
-            <h3>Nada se pierde</h3>
-            <p>Las cartas repetidas se vuelven polvo estelar, y el polvo se cambia por meteoritos.</p>
-          </div>
+        <div class="cards reveal">
+          <article class="card">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2" fill="none" stroke="#6b4eff" stroke-width="2.2" stroke-linecap="round"/></svg>
+            <h3>Leaderboards</h3>
+            <p>Story and Time Attack each have their own, on Game Center (iPhone) and Google Play Games (Android).</p>
+          </article>
+          <article class="card">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="2.5" fill="none" stroke="#3fd8f2" stroke-width="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3" fill="none" stroke="#3fd8f2" stroke-width="2"/></svg>
+            <h3>No account</h3>
+            <p>No sign-up, no email. Your bacteria lives on your phone.</p>
+          </article>
+          <article class="card">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="#ff8a7a" stroke-width="2"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18" fill="none" stroke="#ff8a7a" stroke-width="1.6"/></svg>
+            <h3>16 languages</h3>
+            <p>Play in your own language, from English and Español to 日本語 and 한국어.</p>
+          </article>
         </div>
-      </div>
-    </section>
-
-    <!-- Juego limpio -->
-    <section class="tile light">
-      <div class="container">
-        <p class="eyebrow">Juego limpio</p>
-        <h2 class="display-lg">Gratis de verdad.</h2>
-        <p class="lead">Todo se gana jugando. Si quieres, puedes quitar los anuncios con un solo pago.</p>
-        <div class="facts">
-          <div><strong>0</strong><span>cuentas que crear</span></div>
-          <div><strong>20</strong><span>skins para coleccionar</span></div>
-          <div><strong>∞</strong><span>niveles en Historia</span></div>
-          <div><strong>1</strong><span>pago único para quitar anuncios</span></div>
-        </div>
+        <ul class="langs reveal" aria-label="Available languages">
+          <li lang="en">English</li><li lang="es">Español</li><li lang="pt">Português</li><li lang="fr">Français</li><li lang="de">Deutsch</li><li lang="it">Italiano</li><li lang="ru">Русский</li><li lang="pl">Polski</li><li lang="tr">Türkçe</li><li lang="id">Bahasa Indonesia</li><li lang="vi">Tiếng Việt</li><li lang="th">ไทย</li><li lang="ja">日本語</li><li lang="ko">한국어</li><li lang="zh-Hans">简体中文</li><li lang="zh-Hant">繁體中文</li>
+        </ul>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container">
+    <div class="wrap">
       <div class="footer-links">
-        <a href="support.html">Soporte</a>
-        <a href="privacy.html">Política de privacidad</a>
-        <a href="terms.html">Términos de servicio</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+        <a href="presskit.html">Press kit</a>
+        <a href="technical.html">How it's made</a>
+        <a href="es/" hreflang="es" lang="es">Español</a>
       </div>
-      <small>&copy; 2026 MUTA. Creado por Luis Angel Caballero Jardón.</small>
+      <p>An independent game made in Metepec, State of Mexico, by Luis Angel Caballero Jardón. Questions? <a href="mailto:soporte.mutagame@outlook.com">soporte.mutagame@outlook.com</a></p>
+      <p>App Store and Game Center are trademarks of Apple Inc. Google Play is a trademark of Google LLC.</p>
+      <p>© 2026 Luis Angel Caballero Jardón · MUTA</p>
     </div>
   </footer>
-
-  <script src="js/stores.js"></script>
+  <script src="js/site.js" defer></script>
 </body>
 </html>
